@@ -34,9 +34,9 @@ const personJsonLd = {
     addressCountry: 'US',
   },
   sameAs: [
-    'https://www.linkedin.com/in/timmatyas/',
-    'https://github.com/timmatyas',
-    'https://www.youtube.com/@timmatyas',
+    'https://www.linkedin.com/in/tim-matyas/',
+    'https://github.com/matyastr',
+    'https://www.youtube.com/@timmatyas4004',
   ],
 };
 

@@ -1,4 +1,4 @@
-import type { PercussionService, VideoShowcase } from '@/types';
+import type { PercussionService, VideoShowcase, PercussionPhoto, MusicalShow } from '@/types';
 
 export const percussionIntro = {
   background: [
@@ -37,49 +37,64 @@ export const videoShowcases: VideoShowcase[] = [
     title: 'The Little Mermaid - Overture',
     description:
       'Chartiers-Houston 2017 musical. In this example, I play drum set, timpani, and auxiliary percussion.',
-    videoId: 'REPLACE_WITH_VIDEO_ID_1',
+    url: 'https://www.youtube.com/embed/-8y1fOm11sc',
   },
   {
     title: 'Hello Dolly - Bows',
     description:
       'Chartiers-Houston 2019 musical. In this example, I play swing drum set.',
-    videoId: 'REPLACE_WITH_VIDEO_ID_2',
+    url: 'https://www.youtube.com/embed/UNDDUVl9t94',
   },
   {
     title: 'Heinz Hustle - Bass Line Showcase',
     description:
       'Pittsburgh Steeline bass line showcase at Tequila Cowboy in Pittsburgh. I am playing bass 4, or the second largest bass drum.',
-    videoId: 'REPLACE_WITH_VIDEO_ID_3',
+    url: 'https://www.youtube.com/embed/VXnJu4ca4ag',
   },
   {
     title: '2019 Full Performance',
     description:
       'Pittsburgh Steeline full performance of our 2019 set. I am playing bass 1, or the smallest bass drum.',
-    videoId: 'REPLACE_WITH_VIDEO_ID_4',
+    url: 'https://www.youtube.com/embed/7vFGtHBVpaI',
   },
   {
     title: 'Kickstart My Heart - Marching Band',
     description:
       'Chartiers-Houston Buccaneer Marching Band performing a cover of Motley Crue\'s Kickstart My Heart. I help instruct the drum line and co-arrange show tunes.',
-    videoId: 'REPLACE_WITH_VIDEO_ID_5',
+    url: 'https://www.youtube.com/embed/UjBMjucZsl0?start=184',
   },
 ];
 
 export const schoolDistricts = {
-  instruction: ['Chartiers-Houston'],
+  instruction: ['Chartiers-Houston Marching Band'],
   musicalPit: [
-    'Chartiers-Houston',
-    'South Side Area',
-    'Armstrong',
-    'California',
-    'Brentwood',
-    'Mercer',
+    'Chartiers-Houston School District',
+    'South Side Area School District',
+    'Armstrong School District',
+    'California School District',
+    'Brentwood School District',
+    'Mercer School District',
   ],
 };
 
 export const musicals = [
   'Once Upon a Mattress',
+  'Oklahoma!',
+  'Mary Poppins',
+  'Footloose',
   'The Little Mermaid',
+  'White Christmas',
   'Hello Dolly',
+  'Shrek the Musical',
+  'Annie',
   'Bye Bye Birdie',
+  'Godspell'
+];
+
+export const percussionPhotos: PercussionPhoto[] = [
+  { src: '/images/percussion/photo-1.jpg', alt: 'Boom Drum Performance' },
+  { src: '/images/percussion/photo-2.jpg', alt: 'Musical Pit Percussion' },
+  { src: '/images/percussion/photo-3.jpg', alt: 'Steeline Bass Drum' },
+  { src: '/images/percussion/photo-4.jpg', alt: 'Keyboard Playing' },
+  { src: '/images/percussion/photo-5.jpg', alt: 'Pittsburgh Steeline' },
 ];

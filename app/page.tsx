@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight, FaCode, FaDrum, FaStore } from 'react-icons/fa';
 import SectionHeading from '@/components/ui/SectionHeading';
@@ -17,33 +18,47 @@ export default function Home() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-brand-blue-900 via-brand-blue-800 to-brand-blue text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <p className="text-brand-blue-200 font-medium mb-3 uppercase tracking-wider text-sm">
-              Welcome
-            </p>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
-              Hi there! I&apos;m{' '}
-              <span className="text-brand-blue-200">Tim Matyas</span>
-            </h1>
-            <p className="mt-6 text-lg md:text-xl text-blue-100 leading-relaxed max-w-2xl">
-              Software engineering leader, entrepreneur, and percussionist living in the Greater
-              Pittsburgh Area. My mission is to help as many individuals and teams realize their
-              potential, deliver amazing results while building great cultures, and create life-long
-              relationships.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-blue font-medium rounded-lg hover:bg-blue-50 transition-colors"
-              >
-                Get in Touch <FaArrowRight size={14} />
-              </Link>
-              <Link
-                href="/engineering"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors"
-              >
-                View My Work
-              </Link>
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-12 lg:gap-16">
+            <div className="max-w-3xl flex-1">
+              <p className="text-brand-blue-200 font-medium mb-3 uppercase tracking-wider text-sm">
+                Welcome
+              </p>
+              <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
+                Hi there! I&apos;m{' '}
+                <span className="text-brand-blue-200">Tim Matyas</span>
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-blue-100 leading-relaxed max-w-2xl">
+                Software engineering leader, entrepreneur, and percussionist living in the Greater
+                Pittsburgh Area. My mission is to help as many individuals and teams realize their
+                potential, deliver amazing results while building great cultures, and create life-long
+                relationships.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-blue font-medium rounded-lg hover:bg-blue-50 transition-colors"
+                >
+                  Get in Touch <FaArrowRight size={14} />
+                </Link>
+                <Link
+                  href="/engineering"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors"
+                >
+                  View My Work
+                </Link>
+              </div>
+            </div>
+            <div className="flex-shrink-0 mb-8 md:mb-0">
+              <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mx-auto">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Tim Matyas"
+                  width={288}
+                  height={288}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>

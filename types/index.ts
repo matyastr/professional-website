@@ -53,7 +53,7 @@ export interface PercussionService {
 export interface VideoShowcase {
   title: string;
   description: string;
-  videoId: string;
+  url: string;
 }
 
 export interface NavLink {
@@ -68,10 +68,21 @@ export interface SocialLink {
   icon: string;
 }
 
+export interface PercussionPhoto {
+  src: string;
+  alt: string;
+}
+
+export interface MusicalShow {
+  title: string;
+  image: string;
+}
+
 export interface BusinessVenture {
   name: string;
   tagline: string;
-  description: string;
+  description1: string;
+  description2: string;
   highlights: string[];
   websiteUrl: string;
   services: { title: string; description: string }[];

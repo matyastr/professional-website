@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import SectionHeading from '@/components/ui/SectionHeading';
@@ -57,32 +58,45 @@ export default function Engineering() {
       {/* Background */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <SectionHeading title="Background" />
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p>
-                I graduated in 2012 from Westminster College with my Bachelor of Science in Computer
-                Science and was lucky to find a Software Engineering position at ChemADVISOR. I
-                learned so much at ChemADVISOR and made lifelong friendships. I had the opportunity
-                of having a great mentor there who pushed me into leadership. I found I loved it!
-              </p>
-              <p>
-                In 2015, I decided to further my education and enrolled in the Master of Science in
-                Software Engineering program at West Virginia University. I graduated in December
-                2017, and in February 2018, I received my Lean Six Sigma Green Belt certification
-                from the University of Michigan.
-              </p>
-              <p>My career and educational paths have led me toward the following two passions:</p>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>
-                  Creating the best team cultures: ones of trust, understanding, companionship,
-                  accountability, and continuous learning.
-                </li>
-                <li>
-                  Process improvement: delivering high-quality products and services to customers fast
-                  while reducing non-value-added time.
-                </li>
-              </ul>
+          <SectionHeading title="Background" />
+          <div className="flex flex-col-reverse md:flex-row md:gap-12 lg:gap-16">
+            <div className="flex-1">
+              <div className="space-y-4 text-gray-600 leading-relaxed">
+                <p>
+                  I graduated in 2012 from Westminster College with my Bachelor of Science in Computer
+                  Science and was lucky to find a Software Engineering position at ChemADVISOR. I
+                  learned so much at ChemADVISOR and made lifelong friendships. I had the opportunity
+                  of having a great mentor there who pushed me into leadership. I found I loved it!
+                </p>
+                <p>
+                  In 2015, I decided to further my education and enrolled in the Master of Science in
+                  Software Engineering program at West Virginia University. I graduated in December
+                  2017, and in February 2018, I received my Lean Six Sigma Green Belt certification
+                  from the University of Michigan.
+                </p>
+                <p>My career and educational paths have led me toward the following two passions:</p>
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <li>
+                    Creating the best team cultures: ones of trust, understanding, companionship,
+                    accountability, and continuous learning.
+                  </li>
+                  <li>
+                    Process improvement: delivering high-quality products and services to customers fast
+                    while reducing non-value-added time.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex-shrink-0 mb-8 md:mb-0">
+              <div className="w-72 h-52 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-2xl overflow-hidden shadow-lg mx-auto">
+                <Image
+                  src="/images/engineering.jpg"
+                  alt="Tim Matyas - Engineering"
+                  width={384}
+                  height={256}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

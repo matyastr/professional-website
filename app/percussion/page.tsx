@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import SectionHeading from '@/components/ui/SectionHeading';
 import ServiceCard from '@/components/ui/ServiceCard';
 import YouTubeEmbed from '@/components/ui/YouTubeEmbed';
-import { percussionIntro, percussionServices, videoShowcases, schoolDistricts, musicals } from '@/data/percussion';
+import PhotoCarousel from '@/components/ui/PhotoCarousel';
+import { percussionIntro, percussionServices, videoShowcases, schoolDistricts, musicals, percussionPhotos } from '@/data/percussion';
 
 export const metadata: Metadata = {
   title: 'Percussion',
@@ -53,26 +55,18 @@ export default function Percussion() {
         </div>
       </section>
 
-      {/* Video Showcases */}
+      {/* Photo Gallery */}
       <section className="py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title="Video Showcases" />
-          <div className="grid md:grid-cols-2 gap-8">
-            {videoShowcases.map((video, i) => (
-              <div key={i}>
-                <YouTubeEmbed videoId={video.videoId} title={video.title} />
-                <h3 className="font-heading font-bold text-gray-900 mt-3">{video.title}</h3>
-                <p className="text-gray-600 text-sm mt-1">{video.description}</p>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <SectionHeading title="Photos" />
         </div>
+        <PhotoCarousel photos={percussionPhotos} />
       </section>
 
       {/* School Districts & Musicals */}
       <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-12 md:gap-8">
             <div>
               <SectionHeading title="Drum Line Instruction" />
               <ul className="space-y-2">
@@ -97,6 +91,22 @@ export default function Percussion() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Showcases */}
+      <section className="py-16 md:py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading title="Video Showcases" />
+          <div className="grid md:grid-cols-2 gap-8">
+            {videoShowcases.map((video, i) => (
+              <div key={i}>
+                <YouTubeEmbed url={video.url} title={video.title} />
+                <h3 className="font-heading font-bold text-gray-900 mt-3">{video.title}</h3>
+                <p className="text-gray-600 text-sm mt-1">{video.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

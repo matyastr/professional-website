@@ -1,22 +1,14 @@
 interface YouTubeEmbedProps {
-  videoId: string;
+  url: string;
   title: string;
 }
 
-export default function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
-  if (videoId.startsWith('REPLACE_WITH')) {
-    return (
-      <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm">
-        Video placeholder: {title}
-      </div>
-    );
-  }
-
+export default function YouTubeEmbed({ url, title }: YouTubeEmbedProps) {
   return (
     <div className="aspect-video rounded-xl overflow-hidden shadow-sm">
       <iframe
         className="w-full h-full"
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={url}
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { FaExternalLinkAlt, FaSnowflake, FaGlassCheers, FaCalendarAlt, FaMapMarkerAlt, FaCheckCircle } from 'react-icons/fa';
 import SectionHeading from '@/components/ui/SectionHeading';
 import { shivers } from '@/data/entrepreneurship';
@@ -27,23 +28,37 @@ export default function Entrepreneurship() {
       {/* Shivers Overview */}
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <SectionHeading title={shivers.name} subtitle={shivers.tagline} />
-            <p className="text-gray-600 leading-relaxed text-lg mb-6">{shivers.description}</p>
+          <SectionHeading title={shivers.name} subtitle={shivers.tagline} />
+          <div className="flex flex-col-reverse md:flex-row md:gap-12 lg:gap-16">
+            <div className="flex-1">
+              <p className="text-gray-600 leading-relaxed text-lg mb-4">{shivers.description1}</p>
+              <p className="text-gray-600 leading-relaxed text-lg mb-6">{shivers.description2}</p>
 
-            <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
-              <FaMapMarkerAlt className="text-brand-blue" />
-              <span>Greater Pittsburgh & Gibsonia, PA</span>
+              <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+                <FaMapMarkerAlt className="text-brand-blue" />
+                <span>Greater Pittsburgh Area</span>
+              </div>
+
+              <a
+                href={shivers.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:bg-brand-blue-700 transition-colors"
+              >
+                Visit shiverspgh.com <FaExternalLinkAlt size={12} />
+              </a>
             </div>
-
-            <a
-              href={shivers.websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:bg-brand-blue-700 transition-colors"
-            >
-              Visit shiverspgh.com <FaExternalLinkAlt size={12} />
-            </a>
+            <div className="flex-shrink-0 mb-8 md:mb-0">
+              <div className="w-72 h-52 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-2xl overflow-hidden shadow-lg mx-auto">
+                <Image
+                  src="/images/entrepreneurship.jpg"
+                  alt="Shivers Shaved Ice & Dirty Sodas"
+                  width={384}
+                  height={256}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

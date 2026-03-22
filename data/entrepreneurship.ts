@@ -3,16 +3,18 @@ import type { BusinessVenture } from '@/types';
 export const shivers: BusinessVenture = {
   name: 'Shivers Shaved Ice & Dirty Sodas',
   tagline: 'Creating memories, one cup at a time!',
-  description:
-    "Pittsburgh's Premier Shaved Ice & Dirty Soda Experience. Shivers is a mobile event vendor specializing in shaved ice and flavored sodas operating throughout the Greater Pittsburgh region. Co-owned with my wife Allison, our mission is to bring together our communities and create life-long family memories, one shaved ice cup at a time.",
+  description1:
+    "We are Pittsburgh's Premier Shaved Ice & Dirty Soda Experience. Shivers is a mobile event vendor specializing in shaved ice and flavored sodas operating throughout the Greater Pittsburgh region. Co-owned with my wife Allison, our mission is to bring together our communities and create life-long family memories, one shaved ice cup at a time. ",
   highlights: [
-    'Mobile vendor serving the Greater Pittsburgh and Gibsonia area',
+    'Mobile vendor serving the Greater Pittsburgh area',
     'Wide variety of shaved ice flavors with sugar-free and dye-free options',
     'Dirty sodas — soda with various syrup shots and coffee creamer',
     'Available for private events, festivals, corporate events, and more',
     'Regular appearances at Hampton Farmers Market, Cranberry Town Square Market, and Pine Farmers Market',
     'Serving 15+ community events annually',
   ],
+  description2:
+    'I\'ve honed my administrative, marketing, advertising, budgeting, and website development skills to drive a greater than 4x gross profit increase between 2024 and 2025!',
   websiteUrl: 'https://shiverspgh.com',
   services: [
     {
