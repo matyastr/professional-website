@@ -1,0 +1,27 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Legacy WordPress URL redirects
+[[redirects]]
+  from = "/about-me"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/about-me/"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/contact-me"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/contact-me/"
+  to = "/contact"
+  status = 301
