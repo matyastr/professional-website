@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import './globals.css';
@@ -15,6 +16,12 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Tim Matyas',
     locale: 'en_US',
+    images: [
+      {
+        url: '/images/profile.jpg',
+        alt: 'Tim Matyas - Software Engineering Leader, Entrepreneur, Percussionist',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -54,6 +61,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SFVCRC7SY0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SFVCRC7SY0');
+          `}
+        </Script>
       </head>
       <body>
         <div className="min-h-screen flex flex-col">
