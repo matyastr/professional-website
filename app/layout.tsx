@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  icons: {
+    icon: '/images/drum-solid.png',
+    apple: '/images/drum-solid.png',
+  },
 };
 
 const personJsonLd = {
