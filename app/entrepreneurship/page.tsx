@@ -7,7 +7,7 @@ import { shivers } from '@/data/entrepreneurship';
 export const metadata: Metadata = {
   title: 'Entrepreneurship',
   description:
-    "Co-owner of Shivers Shaved Ice & Dirty Sodas, Pittsburgh's premier mobile shaved ice and dirty soda vendor for events, fundraisers, and parties.",
+    "Co-owner of Shivers Shaved Ice & Dirty Soda, Pittsburgh's premier mobile shaved ice and dirty soda vendor for festivals, fundraisers, and parties.",
 };
 
 export default function Entrepreneurship() {
@@ -52,7 +52,7 @@ export default function Entrepreneurship() {
               <div className="w-72 h-52 md:w-80 md:h-56 lg:w-96 lg:h-64 rounded-2xl overflow-hidden shadow-lg mx-auto">
                 <Image
                   src="/images/entrepreneurship.jpg"
-                  alt="Shivers Shaved Ice & Dirty Sodas"
+                  alt="Shivers Shaved Ice & Dirty Soda"
                   width={384}
                   height={256}
                   className="w-full h-full object-cover"

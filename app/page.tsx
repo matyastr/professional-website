@@ -94,7 +94,7 @@ export default function Home() {
               </div>
               <h3 className="font-heading font-bold text-lg text-gray-900 mb-2">Entrepreneurship</h3>
               <p className="text-gray-600 text-sm">
-                Co-owner of Shivers Shaved Ice & Dirty Sodas, Pittsburgh&apos;s premier mobile event vendor.
+                Co-owner of Shivers Shaved Ice & Dirty Soda, Pittsburgh&apos;s premier mobile dessert vendor.
               </p>
             </Link>
 

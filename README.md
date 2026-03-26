@@ -5,7 +5,7 @@ Personal portfolio website for Tim Matyas, showcasing software engineering leade
 ## Sections
 
 - **Engineering** — Software engineering consulting, leadership development, process improvement, and project management
-- **Entrepreneurship** — Shivers Shaved Ice & Dirty Sodas, a mobile event vendor serving the Pittsburgh area
+- **Entrepreneurship** — Shivers Shaved Ice & Dirty Soda, a mobile dessert vendor serving the Pittsburgh area
 - **Percussion** — Lessons, Broadway musical percussion, drum line instruction, and the Pittsburgh Steeline
 - **About** — Background and professional info
 - **Contact** — Contact form powered by Formspree
