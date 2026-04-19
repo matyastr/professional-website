@@ -17,7 +17,7 @@ export interface WorkRole {
   startDate: string;
   endDate: string;
   description: string;
-  highlights: string[];
+  highlights?: string[];
 }
 
 export interface WorkHistoryItem {

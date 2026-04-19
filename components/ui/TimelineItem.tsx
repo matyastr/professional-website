@@ -28,7 +28,7 @@ export default function TimelineItem({ item, isLast }: TimelineItemProps) {
               </span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed mt-2">{role.description}</p>
-            {role.highlights.length > 0 && (
+            {role.highlights && role.highlights.length > 0 && (
               <ul className="mt-2 space-y-1">
                 {role.highlights.map((h, i) => (
                   <li key={i} className="text-gray-600 text-sm pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-1.5 before:h-1.5 before:bg-brand-blue-200 before:rounded-full">

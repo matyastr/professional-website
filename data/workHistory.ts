@@ -2,6 +2,19 @@ import type { WorkHistoryItem } from '@/types';
 
 export const workHistory: WorkHistoryItem[] = [
   {
+    company: 'FNB (First National Bank)',
+    location: 'Pittsburgh, PA',
+    roles: [
+      {
+        title: 'Manager of Business Analysts',
+        startDate: 'April 2026',
+        endDate: 'Present',
+        description:
+          'Lead a specialized team of Business Analysts in the strategic delivery of end-to-end software and hardware solutions for the retail branch network. Oversee the requirements lifecycle for critical banking infrastructure, including teller systems, fraud prevention tools, and customer acquisition platforms.',
+      },
+    ],
+  },
+  {
     company: 'FIS',
     location: 'Pittsburgh, PA (Remote)',
     roles: [
@@ -38,7 +51,7 @@ export const workHistory: WorkHistoryItem[] = [
         endDate: 'September 2023',
         description:
           'Managed all B2C Audacy streaming app teams (Dev, QA, PM) including native, RN iOS, and Android mobile apps, React web SPA, and connected devices such as Alexa, Google Home, Automotive OS, and Smart TVs.',
-        highlights: [],
+
       },
       {
         title: 'Director of Engineering, Clients',
