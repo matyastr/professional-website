@@ -39,10 +39,10 @@ export const workHistory: WorkHistoryItem[] = [
         startDate: 'September 2023',
         endDate: 'January 2025',
         description:
-          'Directed the delivery teams on two of the most profitable Audacy assets, BetQL and Amperwave. Delivered key-growth player props sports betting features for the BetQL platform. Reimagined the Amperwave podcasting platform to be seamlessly integrated with internal and external parties, increasing platform adoption and revenue growth.',
+          'Led the delivery teams on two of the most profitable Audacy assets, BetQL and Amperwave. Delivered key-growth player props sports betting features for the BetQL platform. Reimagined the Amperwave podcasting platform to be seamlessly integrated with internal and external parties, increasing platform adoption and revenue growth.',
         highlights: [
           'Directed Audacy\'s Amperwave full stack engineering and QA teams around podcast delivery, ingestion, and AdTech campaign management.',
-          'Directed the BetQL full stack engineering efforts including React Native iOS and Android mobile apps, Next.JS web app, subscription management via RevenueCat, Stripe, GraphQL Node server, MySQL, and GCP backend.',
+          'Orchestrated the BetQL full stack engineering efforts including React Native iOS and Android mobile apps, Next.JS web app, subscription management via RevenueCat, Stripe, GraphQL Node server, MySQL, and GCP backend.',
         ],
       },
       {
@@ -50,18 +50,18 @@ export const workHistory: WorkHistoryItem[] = [
         startDate: 'January 2023',
         endDate: 'September 2023',
         description:
-          'Managed all B2C Audacy streaming app teams (Dev, QA, PM) including native, RN iOS, and Android mobile apps, React web SPA, and connected devices such as Alexa, Google Home, Automotive OS, and Smart TVs.',
-
+          'Managed all B2C Audacy streaming app teams (Dev, QA, PM) including native and React Native mobile apps, React web SPA, and connected devices such as Alexa, Google Home, Automotive OS, and Smart TVs. Responsible for the launch of the A2 platform, a complete overhaul of our apps and infrastructure.',
+        highlights: [
+          'Led a group of 20 team members, including 2 engineering managers and respective development teams, a product owner, a scrum master, and QA team.',
+          'Platform Increased total listening hours (TLH) year over year since launching in July 2022, increasing ad revenue and making it the pivotal revenue driving digital platform for Audacy.'
+        ],
       },
       {
         title: 'Director of Engineering, Clients',
         startDate: 'January 2022',
         endDate: 'December 2022',
         description:
-          'Responsible for the launch of the A2 platform, a complete overhaul of our apps and infrastructure. Led a group of 20 team members, including 2 engineering managers and respective development teams, a product owner, a scrum master, and QA team.',
-        highlights: [
-          'Platform increased total listening hours (TLH) year over year since launching in July 2022, increasing ad revenue and making it the pivotal revenue driving digital platform for Audacy.',
-        ],
+          'See next role.',
       },
     ],
   },
